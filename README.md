@@ -6,10 +6,10 @@ Line 2 - The category of task to generate ("active", "passive", "short", or "lon
 
 Line 2 may be left empty. This will generate tasks from any of the categories. Line 1 CANNOT be empty.
 
-Example write:
-8
-passive
-
+Example write:  
+8  
+passive  
+  
 This example will generate 8 passive mindful tasks and write them back to pipe.txt.
 
 Here's an example in C++ on how to request data:
