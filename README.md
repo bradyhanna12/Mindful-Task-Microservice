@@ -15,43 +15,10 @@ This example will generate 8 passive mindful tasks and write them back to pipe.t
 Here's an example in C++ on how to request data:  
 ![image](https://github.com/user-attachments/assets/ef0f2d43-25f9-463c-9b2a-81be98ca5683)  
 
-int main() {  
-    // Step 1: Write "8\npassive" to pipe.txt  
-    ofstream outfile("pipe.txt"); // Open file for writing (overwrites existing content);  
-    if (outfile.is_open()) {  
-        outfile << "8\npassive" << endl; // Write "8", newline, then "passive"  
-        outfile.close();  
-        cout << "Successfully wrote '8 passive' to pipe.txt" << endl;  
-    } else {  
-        cerr << "Error opening file!" << endl;  
-        return 1;  
-    }  
-  
 To receive the data from the microservice, your program must read pipe.txt once it has been written to.  
 Each task will be on its own line in the .txt file.  
   
 Here's an example in C++ on how to receive data:   
 ![image](https://github.com/user-attachments/assets/a70ee527-7519-4dc3-b90e-15dc35cd4d32)  
-    // Step 2: Wait until any text appears in pipe.txt  
-    while (true) {  
-        ifstream infile("pipe.txt");  
-        if (infile.peek() != ifstream::traits_type::eof()) { // Check if file is not empty  
-            break;  
-        }  
-        infile.close();  
-        this_thread::sleep_for(chrono::milliseconds(500)); // Sleep before checking again  
-    }  
-    this_thread::sleep_for(chrono::seconds(1)); // Sleep to wait for the data  
-    // Step 3: Read first 8 lines of pipe.txt and store them in a vector  
-    ifstream infile("pipe.txt");  
-    vector<string> tasks;  
-    string task;  
-    int count = 0;  
-    // Read the 8 lines of data in the "pipe.txt" file  
-    while (count < 8 && getline(infile, task)) {  
-        tasks.push_back(task);  
-        count++;  
-    }  
-    infile.close();  
   
 UML Sequence Diagram:  
