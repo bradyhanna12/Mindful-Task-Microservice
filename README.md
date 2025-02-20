@@ -22,4 +22,4 @@ Here's an example in C++ on how to receive data:
 ![image](https://github.com/user-attachments/assets/a70ee527-7519-4dc3-b90e-15dc35cd4d32)  
   
 UML Sequence Diagram:  
-![image](https://github.com/user-attachments/assets/ffd8723f-ccfe-4e59-a28d-d1d9ca0d4ab5)
+![image](https://github.com/user-attachments/assets/4ba75057-b833-4ec0-b2e1-b9084b211ed8)
