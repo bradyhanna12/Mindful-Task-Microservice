@@ -13,6 +13,8 @@ passive
 This example will generate 8 passive mindful tasks and write them back to pipe.txt.  
   
 Here's an example in C++ on how to request data:  
+![image](https://github.com/user-attachments/assets/ef0f2d43-25f9-463c-9b2a-81be98ca5683)  
+
 int main() {  
     // Step 1: Write "8\npassive" to pipe.txt  
     ofstream outfile("pipe.txt"); // Open file for writing (overwrites existing content);  
@@ -26,8 +28,10 @@ int main() {
     }  
   
 To receive the data from the microservice, your program must read pipe.txt once it has been written to.  
+Each task will be on its own line in the .txt file.  
   
 Here's an example in C++ on how to receive data:   
+![image](https://github.com/user-attachments/assets/a70ee527-7519-4dc3-b90e-15dc35cd4d32)  
     // Step 2: Wait until any text appears in pipe.txt  
     while (true) {  
         ifstream infile("pipe.txt");  
