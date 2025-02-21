@@ -12,7 +12,7 @@ passive
    
 This example will generate 8 passive mindful tasks and write them back to pipe.txt.  
   
-Here's an example in C++ on how to request data (this example is reading a text file assuming the previous example write of ("8", "previous") was in the file:  
+Here's an example in C++ on how to request data :  
 ![image](https://github.com/user-attachments/assets/ef0f2d43-25f9-463c-9b2a-81be98ca5683)  
 
 To receive the data from the microservice, your program must read pipe.txt once it has been written to.  
@@ -22,7 +22,7 @@ Line 1 - Task 1
 Line 2 - Task 2  
 Line 3 - Task 3 ...  
   
-Here's an example in C++ on how to receive data:   
+Here's an example in C++ on how to receive data (this example is reading a text file assuming the previous example write of ("8", "previous") was in the file:   
 ![image](https://github.com/user-attachments/assets/a70ee527-7519-4dc3-b90e-15dc35cd4d32)  
   
 UML Sequence Diagram:  
