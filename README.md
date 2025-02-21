@@ -18,8 +18,8 @@ Here's an example in C++ on how to request data:
 To receive the data from the microservice, your program must read pipe.txt once it has been written to.  
 Each task will be on its own line in the .txt file.  
 Example of tasks written to file:  
-Line 1 - Task 1
-Line 2 - Task 2
+Line 1 - Task 1  
+Line 2 - Task 2  
 Line 3 - Task 3 ...  
   
 Here's an example in C++ on how to receive data:   
